@@ -1,5 +1,6 @@
 # Consider a rectangular chess board of a × b squares. For each of the squares imagine a lone queen standing on that square and compute the number of squares under the queen's attack. Add all the numbers you got for each of the a × b possible queen's positions.
 
+
 def chessBoardSquaresUnderQueenAttack(a, b):
 
     def go(x, y, dx, dy):

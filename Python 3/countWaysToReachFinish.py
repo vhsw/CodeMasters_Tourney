@@ -1,6 +1,7 @@
 # Consider a sequence of cells which are either free or blocked. The distance between each pair of consecutive cells is 1. Initially you are standing in the first cell (1-based), you may visit only free cells, and your goal is to reach the last cell (both the first and the last cells are free). You move between cells only by jumping. You can make jumps of any integer length and in either direction with only two restrictions: you cannot make two jumps of equal length and you cannot jump out of the cell sequence.
 # Given a cell sequence, count the number of such sequences of jumps that after following them you will end up at the last cell. Two sequences of jumps are considered different either if they consist of different number of jumps or if for some i, the ith jumps of these two sequences differ.
 
+
 def countWaysToReachFinish(cells):
 
     n = len(cells)
