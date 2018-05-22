@@ -34,4 +34,3 @@ def findPath(matrix):
         else:
             return False
     return True
-
