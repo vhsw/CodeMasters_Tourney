@@ -1,7 +1,7 @@
 # Find all distinct prime factors of a given integer.
 
 
-def primeFactors2(n):
+def primeFactors2_(n):
     i = 2
     res = []
 
