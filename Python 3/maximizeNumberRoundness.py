@@ -1,4 +1,15 @@
 # Given an integer n, find the minimum number of swaps required to maximize n's roundness.
 
 def maximizeNumberRoundness(n):
-    return int('0' in str(n).rstrip('0'))
+    tmp = n
+    zeros = 0
+    while tmp:
+        if tmp % 10 == 0:
+            zeros += 1
+        tmp //= 10
+    result = zeros
+    for i in range(zeros):
+        if n % 10 == 0:
+            result -= 1
+        n //= 10
+    return result
